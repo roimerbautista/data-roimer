@@ -1,0 +1,313 @@
+# =====================================================================
+#  .gitignore - BigData_Roimer
+#  Python | Jupyter | Spark / PySpark | Hadoop / Hive | Databricks
+#  Airflow | Jenkins | Docker | VS Code / PyCharm | Windows / Linux / macOS
+# =====================================================================
+
+
+# ---------------------------------------------------------------------
+# Credenciales y secretos
+# ---------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+secrets/
+credentials/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.keytab
+id_rsa*
+id_ed25519*
+*.ppk
+credentials.json
+service-account*.json
+client_secret*.json
+token.json
+.netrc
+.pgpass
+.databrickscfg
+.aws/
+.azure/
+.gcloud/
+
+
+# ---------------------------------------------------------------------
+# Entornos virtuales
+# ---------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+topicos/
+.python-version
+.conda/
+conda-meta/
+Pipfile.lock.bak
+.pdm-python
+.pdm-build/
+__pypackages__/
+
+
+# ---------------------------------------------------------------------
+# Python - bytecode, compilados y empaquetado
+# ---------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+*.manifest
+*.spec
+
+
+# ---------------------------------------------------------------------
+# Pruebas, cobertura y linters
+# ---------------------------------------------------------------------
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+nosetests.xml
+.hypothesis/
+.cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+cython_debug/
+
+
+# ---------------------------------------------------------------------
+# Jupyter / IPython
+# ---------------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+.jupyter/
+*.nbconvert.ipynb
+
+
+# ---------------------------------------------------------------------
+# Spark / PySpark
+# ---------------------------------------------------------------------
+spark-warehouse/
+metastore_db/
+derby.log
+spark-events/
+spark-logs/
+checkpoint/
+checkpoints/
+_checkpoint/
+.spark-staging/
+*.crc
+_SUCCESS
+_started_*
+_committed_*
+
+
+# ---------------------------------------------------------------------
+# Hadoop / Hive
+# ---------------------------------------------------------------------
+hadoop-data/
+hdfs-data/
+namenode/
+datanode/
+tmp/hadoop-*/
+hive-warehouse/
+hive_metastore/
+*.hql.bak
+hive.log
+hiveserver2.log
+
+
+# ---------------------------------------------------------------------
+# Databricks
+# ---------------------------------------------------------------------
+.databricks/
+.bundle/
+dbfs/
+*.dbc
+
+
+# ---------------------------------------------------------------------
+# Apache Airflow
+# ---------------------------------------------------------------------
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+webserver_config.py
+unittests.cfg
+standalone_admin_password.txt
+airflow/logs/
+logs/
+airflow/plugins/__pycache__/
+
+
+# ---------------------------------------------------------------------
+# Jenkins
+# ---------------------------------------------------------------------
+jenkins_home/
+.jenkins/
+workspace@tmp/
+
+
+# ---------------------------------------------------------------------
+# Docker / contenedores
+# ---------------------------------------------------------------------
+docker-compose.override.yml
+.docker/
+*.tar.gz
+docker-data/
+volumes/
+
+
+# ---------------------------------------------------------------------
+# Datos (capas Medallón y archivos pesados)
+# Las carpetas se ignoran pero se puede conservar un .gitkeep
+# ---------------------------------------------------------------------
+data/**
+!data/**/
+!data/**/.gitkeep
+bronze/
+silver/
+gold/
+landing/
+raw/
+*.parquet
+*.orc
+*.avro
+*.delta
+_delta_log/
+*.feather
+*.arrow
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+*.zip
+*.7z
+*.rar
+*.gz
+*.bz2
+*.tar
+# Descomentar si los CSV/JSON/Excel de datos no deben subirse:
+# *.csv
+# *.tsv
+# *.json
+# *.xlsx
+# *.xls
+
+
+# ---------------------------------------------------------------------
+# Logs y temporales
+# ---------------------------------------------------------------------
+*.log
+*.log.*
+*.out
+*.pid
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+tmp/
+temp/
+nohup.out
+
+
+# ---------------------------------------------------------------------
+# Editores e IDEs
+# ---------------------------------------------------------------------
+# VS Code (se conservan configuraciones compartibles)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+*.code-workspace
+.history/
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# Spyder / Rope
+.spyderproject
+.spyproject
+.ropeproject
+
+# Vim / Emacs / Sublime
+*.sublime-project
+*.sublime-workspace
+\#*\#
+.\#*
+
+
+# ---------------------------------------------------------------------
+# Sistema operativo
+# ---------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+*:Zone.Identifier
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+.directory
+.Trash-*
+.fuse_hidden*
+.nfs*
