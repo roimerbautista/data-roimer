@@ -9,12 +9,15 @@
 5. Ubuntu 26.04 (OS Linux)
 6. Hadoop (Almacenamiento Distribuido)
 7. Hive (SQL)
-8. Spark
-9. Pyspark (Lenguaje Spark + Python)
-10. Databricks (Procesamiento en Nube)
-11. Jenkins (CI/CD)
-12. Aparche Airflow (Orquestacion)
-13. SSH (Conexion Remota)
+8. MongoDB (Base datos  no Relacional)
+ - MongoDB Local
+ - MongoDB Atlas
+9. Spark
+10. Pyspark (Lenguaje Spark + Python)
+11. Databricks (Procesamiento en Nube)
+12. Jenkins (CI/CD)
+13. Aparche Airflow (Orquestacion)
+14. SSH (Conexion Remota)
 
 ## Metodologias
 
