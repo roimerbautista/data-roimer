@@ -25,6 +25,6 @@
 
 #####
 
-© 2026 Jaime Llanos Bardales
+© 2026 Juan Roimer Bautista Huingo
 
-Este trabajo esta Bajo Licencia [Creative Commons Attribution 4.0 International](LICENSE)
+Este trabajo esta Bajo Licencia [Creative Commons Attribution 4.0 International](LICENCE)
